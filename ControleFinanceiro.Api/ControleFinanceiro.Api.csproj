@@ -4,4 +4,13 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Common\" />
+    <Folder Include="InfraStructure\Data\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ControleFinanceiro.Common\ControleFinanceiro.Common.csproj" />
+  </ItemGroup>
+
 </Project>
