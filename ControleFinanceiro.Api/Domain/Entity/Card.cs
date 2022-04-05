@@ -2,7 +2,7 @@
 
 namespace ControleFinanceiro.Api.Domain.Entity
 {
-    public class Card
+    public class Card : EntityWithUser
     {
         public virtual int UserId { get; protected set; }
         public virtual int BankId { get; protected set; }
