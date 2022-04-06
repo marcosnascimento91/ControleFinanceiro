@@ -1,12 +1,13 @@
 ﻿using ControleFinanceiro.Api.Domain.Entity;
 using ControleFinanceiro.Api.InfraStructure.Data.Maps;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 namespace ControleFinanceiro.Api.InfraStructure.Data.Context
 {
     public class ControleFinanceiroContext : DbContext
     {
-        protected ControleFinanceiroContext()
+        protected ControleFinanceiroContext(DbContextOptions<ControleFinanceiroContext> options) : base(options)
         {
         }
 

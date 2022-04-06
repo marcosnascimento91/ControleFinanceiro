@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControleFinanceiro.Api", "C
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ControleFinanceiro.SpaUi", "ControleFinanceiro.SpaUi\", "{F65B8453-FA7F-48B9-83A0-B80BA25E43C3}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_52231"
 		Debug.AspNetCompiler.PhysicalPath = "ControleFinanceiro.SpaUi\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52231\"
