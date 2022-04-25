@@ -7,7 +7,7 @@ namespace ControleFinanceiro.Api.InfraStructure.Data.Context
 {
     public class ControleFinanceiroContext : DbContext
     {
-        protected ControleFinanceiroContext(DbContextOptions<ControleFinanceiroContext> options) : base(options)
+        public ControleFinanceiroContext(DbContextOptions<ControleFinanceiroContext> options) : base(options)
         {
         }
 
@@ -18,7 +18,7 @@ namespace ControleFinanceiro.Api.InfraStructure.Data.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            new AccessLogMap(modelBuilder.Entity<Maps.AccessLog>());
+            new AccessLogMap(modelBuilder.Entity<AccessLog>());
             new BankMap(modelBuilder.Entity<Bank>());
             new CardMap(modelBuilder.Entity<Card>());
             new CardPaymentTypeMap(modelBuilder.Entity<CardPaymentType>());

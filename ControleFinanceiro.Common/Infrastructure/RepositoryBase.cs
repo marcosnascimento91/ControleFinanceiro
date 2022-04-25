@@ -8,26 +8,20 @@ using System.Threading.Tasks;
 
 namespace ControleFinanceiro.Common.Infrastructure
 {
-    public class RepositoryBase<T> : IRepository<T> where T : class
+    public abstract class RepositoryBase<T> : IRepository<T> where T : class
     {
-
         protected DbContext context;
-        protected DbSet<T> dbset;
+        protected DbSet<T> dbSet;
 
         public RepositoryBase(DbContext context)
         {
             this.context = context;
-            this.dbset = this.context.Set<T>();
+            this.dbSet = this.context.Set<T>();
         }
 
         public IQueryable<T> GetAll()
         {
-            return this.dbset;
-        }
-
-        public T GetById(int id)
-        {
-            return this.dbset.AsNoTracking();
+            return this.dbSet.AsNoTracking();
         }
     }
 }

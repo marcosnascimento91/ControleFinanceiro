@@ -5,6 +5,6 @@ namespace ControleFinanceiro.Api.Domain.Interface.Repository
 {
     public interface IRoleRepository : IRepository<Role>
     {
-        AccessLog GetById(int id);
+        Role GetById(int id);
     }
 }

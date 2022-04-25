@@ -2,12 +2,11 @@
 using ControleFinanceiro.Api.Domain.Interface.Repository;
 using ControleFinanceiro.Api.InfraStructure.Data.Context;
 using ControleFinanceiro.Common.Infrastructure;
-using Microsoft.EntityFrameworkCore;
 using System.Linq;
 
-namespace ControleFinanceiro.Api.InfraStructure.Repository
+namespace ControleFinanceiro.Api.Infrastructure.Data.Repository
 {
-    public class BankRepository : RepositoryBase<AccessLog>, IBankRepository
+    public class BankRepository : RepositoryBase<Bank>, IBankRepository
     {
         public BankRepository(ControleFinanceiroContext context) : base(context)
         {
@@ -15,9 +14,7 @@ namespace ControleFinanceiro.Api.InfraStructure.Repository
 
         public Bank GetById(int id)
         {
-            var accesLog = this.GetAll().SingleOrDefault(_ => _.Id == id);
-
-            return accesLog;
+            return this.GetAll().SingleOrDefault(_ => _.Id == id);
         }
     }
 }

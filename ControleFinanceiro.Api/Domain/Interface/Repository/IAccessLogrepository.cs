@@ -3,7 +3,7 @@ using ControleFinanceiro.Common.Interface.Infrastructure;
 
 namespace ControleFinanceiro.Api.Domain.Interface.Repository
 {
-    public interface IAccessLogrepository : IRepository<AccessLog>
+    public interface IAccessLogRepository : IRepository<AccessLog>
     {
         AccessLog GetById(int id);
     }

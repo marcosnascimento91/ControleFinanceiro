@@ -3,8 +3,8 @@ using ControleFinanceiro.Common.Interface.Infrastructure;
 
 namespace ControleFinanceiro.Api.Domain.Interface.Repository
 {
-    public interface IPaymentTypeRepository : IRepository<PaymentType>
+    public interface ICardPaymentTypeRepository : IRepository<CardPaymentType>
     {
-        AccessLog GetById(int id);
+        CardPaymentType GetById(int id);
     }
 }

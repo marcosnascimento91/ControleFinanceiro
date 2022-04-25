@@ -5,6 +5,6 @@ namespace ControleFinanceiro.Api.Domain.Interface.Repository
 {
     public interface IExpenseRepository : IRepository<Expense>
     {
-        AccessLog GetById(int id);
+        Expense GetById(int id);
     }
 }

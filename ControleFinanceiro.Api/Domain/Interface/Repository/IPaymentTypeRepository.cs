@@ -5,6 +5,6 @@ namespace ControleFinanceiro.Api.Domain.Interface.Repository
 {
     public interface IPaymentTypeRepository : IRepository<PaymentType>
     {
-        AccessLog GetById(int id);
+        PaymentType GetById(int id);
     }
 }
