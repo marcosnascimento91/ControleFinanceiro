@@ -1,4 +1,5 @@
-﻿using ControleFinanceiro.Common.Domain;
+﻿
+using ControleFinanceiro.Common.Domain;
 using System;
 
 namespace ControleFinanceiro.Api.Domain.Entity
